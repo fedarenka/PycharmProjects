@@ -156,9 +156,29 @@
 # Словом считается последовательность непробельных символов идущих подряд,
 # слова разделены одним пробелом.
 
-text = "one two one two three".split(" ")
+text = "one two one two three two one".split(" ")
 d = {i:text.count(i) for i in text}
 print(d)
+for k,v in d.items():
+    print(k,v)
+
+lst_v = []
+
+for k,v in d.items():
+    lst_v.append(v)
+lst1_k = tuple(lst_v)
+for k,v in d.items():
+    if v == max(lst1_k):
+        print(k)
+lst = list(lst1_k)
+lst.sort()
+print(lst)
+
+
+
+
+
+
 # d = {}
 # for word in text.split(" "):
 # #      if word in d:
@@ -166,8 +186,8 @@ print(d)
 # #      else:
 # #          d[word] = 1
 # print(d)
-for k,v in d.items():
-    print(k,v)
+# for k,v in d.items():
+#     print(k,v)
 #
 #     d[word] = d.get(word, 0) + 1
 #     print(d)
