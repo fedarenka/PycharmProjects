@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Книга рецептов</title>
+</head>
+
+
+<body>
+
+{% for category in categorys %}
+    <h1>Название: {{ category.name }} </h1>
+
+    <a href="{% url 'category' category_id=category.pk %}">Перейти к рецептам</a>
+    <hr/>
+{% endfor %}
+
+</body>
+</html>

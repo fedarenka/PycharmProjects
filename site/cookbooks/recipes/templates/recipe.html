@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %} {{recipe.name}} {% endblock %}
+{% block content %}
+<div class="recipe-style">
+    <h1> {{ recipe.name }} </h1>
+    <h3>категория: {{recipe.category}}</h3>
+    <img src={{recipe.image.url}}>
+
+    <h2>уровень сложности: {{ recipe.difficulty_level }}</h2>
+    <h2>время подготовки, минут: {{ recipe.prep_time }}</h2>
+    <h2>время готовки, минут: {{ recipe.cook_time }}</h2>
+    <h4>ингридиенты: {{ recipe.ingredients }}</h4>
+    <p2>Рейтинг: {{ reviews_average_rating }}</p2>
+    <h4>Процесс приготовления: {{ recipe.process }}</h4>
+</div>
+
+<hr/>
+
+{% for review in reviews %}
+<div class="review-card" style="width: 57rem;">
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Рейтинг: {{ review.rating }} из 5.</li>
+    <li class="list-group-item">Комментарий: {{review.text}}</li>
+  </ul>
+</div>
+
+{% endfor %}
+
+{% endblock %}
