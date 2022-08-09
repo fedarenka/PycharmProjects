@@ -1,0 +1,41 @@
+.recipe-style {
+    margin: 10px 300px;
+    border-radius: 20px;
+    text-align:center;
+    background-image:url(https://img.povar.ru/uploads/8b/ab/dc/60/cdb1bcca13843c206c0338d1d9df02fc.svg);
+}
+h1 {color:DarkRed; }
+
+h3 {color:DarkSlateGray; }
+h4 {text-align:center}
+body {
+    background:url(https://gamerwall.pro/uploads/posts/2022-03/1648097295_38-gamerwall-pro-p-fon-dlya-detskogo-menyu-krasivie-38.jpg)
+    }
+
+.recipes-style {
+
+    margin: 10px 300px;
+    border-radius: 20px;
+    text-align:center;
+    background-image:url(https://img.povar.ru/uploads/8b/ab/dc/60/cdb1bcca13843c206c0338d1d9df02fc.svg);
+}
+.home-style {
+    margin: 200px 500px;
+    text-align:center;
+    }
+.home-style h1 {
+    color:DarkGreen}
+
+.review-card {
+    display: block;
+    margin: 5px auto;
+    border-radius: 20px;
+    }
+
+.review-card li {
+    background-image:url(https://img.povar.ru/uploads/8b/ab/dc/60/cdb1bcca13843c206c0338d1d9df02fc.svg);
+}
+
+.container-fluid {
+    background-color:Lavender;
+    }

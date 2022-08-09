@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block title %} Книга рецептов {% endblock %}
+{% block content %}
+
+
+{% for recipe in recipes %}
+<div class="recipes-style">
+    <h1>Название: {{ recipe.name }} </h1>
+    <h3>категория: {{recipe.category}}</h3>
+    <h2>уровень сложности: {{ recipe.difficulty_level }}</h2>
+    <h3>время подготовки, минут: {{ recipe.prep_time }}</h3>
+    <h3>время готовки, минут: {{ recipe.cook_time }}</h3>
+    <h4>ингридиенты: {{ recipe.ingredients }}</h4>
+    <a class="btn btn-outline-success" href="{% url 'recipe' recipe_id=recipe.pk %}">Подробнее</a>
+</div>
+{% endfor %}
+{% endblock %}
+
+
