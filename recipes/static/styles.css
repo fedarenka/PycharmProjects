@@ -29,7 +29,6 @@ body {
 .review-card {
     display: block;
     margin: 5px auto;
-    border-radius: 20px;
     }
 
 .review-card li {
@@ -38,4 +37,14 @@ body {
 
 .container-fluid {
     background-color:Lavender;
+}
+
+.review-form {
+    margin-left: 30%;
+}
+
+.review-form input {
+    display: block;
+    margin-left: 5%;
     }
+

@@ -15,7 +15,13 @@
 </div>
 
 <hr/>
-
+<div class="review-form">
+    <form action="." method="post">
+        {% csrf_token %}
+        {{ form }}
+        <input type="submit" value="Отправить">
+    </form>
+</div>
 {% for review in reviews %}
 <div class="review-card" style="width: 57rem;">
   <ul class="list-group list-group-flush">
